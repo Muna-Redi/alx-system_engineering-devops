@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-#this script displays good or bad luck and Best school in
-#a while loop 10 time iteration
+#this script displays numbers 1 to 20 an bad luck from china, japan or italy
+#depending on a given number 4, 9, or 17
 i=1
 
 while ((i < 21)); do
@@ -12,6 +12,9 @@ while ((i < 21)); do
 			echo "bad luck from Japan";;
 		17)
 			echo " bad luck from Italy";;
+		*)
+			((i+=1))
+			continue;;
 	esac
 	((i+=1))
 done
