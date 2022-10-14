@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#list all currently running processes in user format
+#with process hierarchy including those without TTY
+ps auxf
