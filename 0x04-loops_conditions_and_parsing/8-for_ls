@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #lists the content of the current directory without
 #the first '-' delimeter
-j=0
-for (( j=0; j < 1; j++ )); do
-	ls | cut -d '-' -f 2-
+for ((i=0; i < 1; i++)); do
+		find ./*-* | cut -d '-' -f 2-
 done
