@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#this scripts display's its process id
+
+file="0-what-is-my-pid"
