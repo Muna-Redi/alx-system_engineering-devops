@@ -3,7 +3,7 @@
 #a while loop 10 time iteration
 i=0
 
-while ((i < 20)); do
+while ((i < 21)); do
 	echo "$i"
 	case $i in
 		4)
