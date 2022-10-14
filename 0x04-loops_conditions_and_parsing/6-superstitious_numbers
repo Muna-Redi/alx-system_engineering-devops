@@ -12,9 +12,6 @@ while ((i < 21)); do
 			echo "bad luck from Japan";;
 		17)
 			echo " bad luck from Italy";;
-		*)
-			((i+=1))
-			continue;;
 	esac
 	((i+=1))
 done
