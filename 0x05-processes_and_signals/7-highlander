@@ -2,7 +2,7 @@
 #infinite loop
 function msg()
 {
-	echo "I am invincible"
+	echo "I am invincible!!!"
 }
 while ((1)); do
 	trap msg 2

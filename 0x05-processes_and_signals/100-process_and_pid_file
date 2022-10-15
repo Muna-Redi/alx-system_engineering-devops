@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#creates a file containing its pid
+#and also catches signals
+i=0
+echo $BASHPID > /var/run/holbertonscript.pid
+trap 'echo "I hate the kill command"; rm /var/run/my_script.pid; exit 0;' SIGTERM
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'rm /var/run/my_script.pid; exit 0;' SIGQUIT
+while (1); do
+    echo "To infinity and beyond"
+    sleep 2
+done;
