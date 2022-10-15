@@ -2,4 +2,4 @@
 #kills a process
 
 var=$(pgrep 4-to_infinity_and_beyond)
-kill -15 "$var"
+kill SIGTERM "$var"
