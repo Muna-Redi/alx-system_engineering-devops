@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#infinite loop
+function msg()
+{
+	echo "I am invincible"
+}
+while ((1)); do
+	trap msg 2
+	echo "To infinity and beyond"
+	sleep 2
+done
