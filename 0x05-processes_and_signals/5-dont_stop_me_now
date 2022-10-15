@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #kills a process
-kill SIGTERM "$(pgrep 4-to_infinity_and_beyond)"
+var="$(pgrep -a "bash" | grep "4-to_infinity" | cut -d' ' -f1)"
+kill SIGTERM "$var"
