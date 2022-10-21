@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# changes the home ip address and facebook's ip too
+echo "127.0.0.2 	localhost" >> /etc/hosts
