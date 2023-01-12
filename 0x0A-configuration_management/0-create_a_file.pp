@@ -1,5 +1,4 @@
 #This maniefest creates a file with given permissions and ownerships
-
 file {"/tmp/school/":
   ensure => file,
   path => "/tmp/school",
