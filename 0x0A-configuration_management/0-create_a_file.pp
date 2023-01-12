@@ -5,5 +5,5 @@ file {"/tmp/school/":
   content => "I Love Puppet",
   owner => "www-data",
   group => "www-data",
-  mode => 744
+  mode => "0744"
 }
