@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+# Restarting Apache
+service apache2 restart
