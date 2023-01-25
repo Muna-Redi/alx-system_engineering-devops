@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# nginx configuration with http header
+# X-served By for server web-01 and web-02
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo sed -i "15i \\\tadd_header X-Served-By 59892-web-01;" /etc/nginx/nginx.conf
+sudo service nginx restart
