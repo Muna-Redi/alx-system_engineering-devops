@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
-# Configuring a container to work with nginx at port 8080
+# Configure a to work with nginx at port 8080
 pkill apache2
-# giving file ownership to nginx
 chown nginx /etc/nginx/nginx.conf
-# granting read permission
 chmod u+r /etc/nginx/nginx.conf
-# searching and replacing pirt 80 with 8080
 sed -i "s/80/8080/g" /etc/nginx/sites-available/default
-# restsrging the server
 sudo -u nginx service nginx restart
+
