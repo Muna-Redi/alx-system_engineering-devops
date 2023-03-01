@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """working with dictionaries
 """
+
 from json import dump
 from requests import get
 
