@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# ssh server connection
+ssh-copy-id -i ~/.ssh/school ubuntu@munachyme.tech
