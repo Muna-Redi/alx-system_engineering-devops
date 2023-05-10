@@ -21,9 +21,9 @@ def top_ten(subreddit):
 
     try:
 
-        posts = response.requests.get("data").requests.get("children")
+        posts = response.get("data").get("children")
         for post in posts:
-            print(post.requests.get("data").requests.get("title"))
+            print(post.get("data").get("title"))
 
     except Exception as e:
         print("None")
