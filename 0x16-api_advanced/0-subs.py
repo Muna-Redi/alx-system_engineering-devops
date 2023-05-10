@@ -14,7 +14,8 @@ def number_of_subscribers(subreddit):
         "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101\
         Firefox/15.0.1"
     }
-    response = (requests.get(url, headers=user_agent, allow_redirects=False)).json()
+    response = (requests.get(url, headers=user_agent,
+                allow_redirects=False)).json()
 
     try:
         subscribers = response.requests.get("data").requests.get("subscribers")
