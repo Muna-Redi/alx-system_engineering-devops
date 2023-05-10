@@ -10,7 +10,7 @@ after = None
 
 def recurse(subreddit, hot_list=[]):
     """ Function prints titles of a subreddit's top ten hot posts """
-
+    global after
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     user_agent = {
         "User-Agent":
