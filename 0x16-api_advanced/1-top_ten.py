@@ -10,7 +10,6 @@ import requests
 def top_ten(subreddit):
     """ Function prints titles of a subreddit's top ten hot posts """
 
-
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     user_agent = {
         "User-Agent":
@@ -27,5 +26,4 @@ def top_ten(subreddit):
             print(post.requests.get("data").requests.get("title"))
 
     except Exception as e:
-         print("None")
-
+        print("None")
