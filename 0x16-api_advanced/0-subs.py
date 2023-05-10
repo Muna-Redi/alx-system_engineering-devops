@@ -19,6 +19,6 @@ def number_of_subscribers(subreddit):
     try:
         subscribers = response.requests.get("data").requests.get("subscribers")
     except Exception as e:
-        subscribers = "None"
+        subscribers = 0
 
     return subscribers
