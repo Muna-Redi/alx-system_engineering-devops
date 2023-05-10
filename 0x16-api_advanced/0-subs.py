@@ -22,4 +22,3 @@ def number_of_subscribers(subreddit):
         subscribers = "None"
 
     return subscribers
-    
