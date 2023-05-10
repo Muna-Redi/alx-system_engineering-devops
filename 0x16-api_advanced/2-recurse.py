@@ -18,7 +18,7 @@ def recurse(subreddit, hot_list=[]):
         Firefox/15.0.1"
     }
     param = {"after": after}
-    response = requests.get(url, headers=user_agent, params=param,
+    response = requests.get(url, params=param, headers=user_agent,
                             allow_redirects=False)
     if response.status_code == 200:
         new_page = response.json().get("data").get("after")
