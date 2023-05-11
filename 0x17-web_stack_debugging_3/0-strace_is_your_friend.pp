@@ -3,6 +3,6 @@
 $file_name = '/var/www/html/wp-settings.php'
 
 exec { 'fix_line':
-  command => "sed -i 's/phpp/php/g' ${file_to_edit}",
+  command => "sed -i 's/phpp/php/g' ${file_name}",
   path    => ['/bin','/usr/bin']
 }
