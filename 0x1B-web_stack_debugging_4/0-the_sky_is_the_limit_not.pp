@@ -1,13 +1,13 @@
-# script to allow user holberton to login and open files without error
+# puppet script to increases number of request an Nginx server can handle
 
-# Increase hard file limit for user holberton
-exec { 'increase-request-limit':
-  command => 'sed -i "/holberton hard/s/5/50000/" /etc/security/limits.conf',
+# Increasing the ULIMIT in the default file
+exec { 'fix--for-nginx':
+  command => 'sed -i "s/15/4096/" /etc/default/nginx',
   path    => '/usr/local/bin/:/bin/'
 }
 
-# Increasing request limit
-exec { 'increase-request-limit':
-  command => 'sed -i "/holberton soft/s/4/50000/" /etc/security/limits.conf',
-  path    => '/usr/local/bin/:/bin/'
+# Restarting Nginx
+-> exec { 'nginx-restart':
+  command => 'nginx restart',
+  path    => '/etc/init.d/'
 }
